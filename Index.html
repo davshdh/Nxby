@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podpora Projektu X | Ultimátní Relax</title>
+    <title>Ultimátní mačkací hračka | Podpora</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -48,7 +48,7 @@
 
         .status-dot { height: 8px; width: 8px; background-color: #34d399; border-radius: 50%; margin-right: 8px; box-shadow: 0 0 10px #34d399; }
 
-        h1 { font-size: 28px; margin: 0 0 12px 0; letter-spacing: -1px; font-weight: 800; line-height: 1.2;}
+        h1 { font-size: 32px; margin: 0 0 12px 0; letter-spacing: -1px; font-weight: 800; line-height: 1.1; color: #fff; }
         .description { color: var(--text-muted); line-height: 1.6; margin-bottom: 30px; font-size: 15px; }
         
         .highlight { color: #a5b4fc; font-weight: 600; }
@@ -56,7 +56,7 @@
         .pb-container { background: rgba(255, 255, 255, 0.05); border-radius: 12px; height: 16px; overflow: hidden; position: relative; }
         .pb-bar { 
             background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%);
-            height: 100%; width: 0%; /* Animuje JS */
+            height: 100%; width: 0%; 
             border-radius: 12px; transition: width 1.8s cubic-bezier(0.19, 1, 0.22, 1);
         }
 
@@ -76,17 +76,17 @@
 
 <div class="main-card">
     <div class="image-header">
-        <img src="https://i.postimg.cc/T59xDkpy/Blur-16284-skin-01-1.jpg" alt="Ergonomický válec">
+        <img src="https://i.postimg.cc/T59xDkpy/Blur-16284-skin-01-1.jpg" alt="Hračka">
         <div class="image-gradient"></div>
     </div>
 
     <div class="content-body">
         <div class="status-badge"><span class="status-dot"></span>Záchranná mise</div>
         
-        <h1>Projekt X:<br>Ultimátní „masážní“ hračka</h1>
+        <h1>Ultimátní mačkací hračka</h1>
         
         <p class="description">
-            Kámoši, doba je zlá a stres se hromadí. Proto nutně potřebuju zafinancovat tuto <span class="highlight">vysoce specializovanou, ergonomickou masážní pomůcku</span>. 
+            Kámoši, doba je zlá a stres se hromadí. Proto nutně potřebuju zafinancovat tuto <span class="highlight">vysoce specializovanou, ergonomickou mačkací hračku</span>. 
             Moje celkové napětí už dosahuje kritických hodnot a vy mě v tom nesmíte nechat! 
             <br><br>
             Neptejte se na detaily, nezkoumejte tu fotku s lupou, prostě pošlete prachy a podpořte moje duševní zdraví. Každá stovka mě posouvá blíž.
@@ -100,13 +100,13 @@
             </div>
         </div>
 
-        <a href="https://www.paypal.me/TVOJE_JMENO" class="paypal-btn">Poslat na "relaxaci" přes PayPal</a>
+        <a href="https://www.paypal.me/TVOJE_JMENO" class="paypal-btn">Podpořit nákup hračky</a>
     </div>
 </div>
 
 <script>
     window.onload = function() {
-        // Tady nastavuješ aktuální procenta (0-100)
+        // Sem pak napíšeš procenta (např. '10%') až ti někdo pošle peníze
         setTimeout(() => { document.getElementById('goal-bar').style.width = '0%'; }, 500);
     };
 </script>
