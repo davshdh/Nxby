@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podpora Projektu X | Oficiální Kampaň</title>
+    <title>Podpora Projektu X | Ultimátní Relax</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -48,8 +48,10 @@
 
         .status-dot { height: 8px; width: 8px; background-color: #34d399; border-radius: 50%; margin-right: 8px; box-shadow: 0 0 10px #34d399; }
 
-        h1 { font-size: 28px; margin: 0 0 12px 0; letter-spacing: -1px; font-weight: 800; }
-        .description { color: var(--text-muted); line-height: 1.7; margin-bottom: 30px; font-size: 15px; }
+        h1 { font-size: 28px; margin: 0 0 12px 0; letter-spacing: -1px; font-weight: 800; line-height: 1.2;}
+        .description { color: var(--text-muted); line-height: 1.6; margin-bottom: 30px; font-size: 15px; }
+        
+        .highlight { color: #a5b4fc; font-weight: 600; }
 
         .pb-container { background: rgba(255, 255, 255, 0.05); border-radius: 12px; height: 16px; overflow: hidden; position: relative; }
         .pb-bar { 
@@ -74,31 +76,38 @@
 
 <div class="main-card">
     <div class="image-header">
-        <img src="https://i.postimg.cc/T59xDkpy/Blur-16284-skin-01-1.jpg" alt="Projekt náhled">
+        <img src="https://i.postimg.cc/T59xDkpy/Blur-16284-skin-01-1.jpg" alt="Ergonomický válec">
         <div class="image-gradient"></div>
     </div>
 
     <div class="content-body">
-        <div class="status-badge"><span class="status-dot"></span>Aktivní kampaň</div>
-        <h1>Podpora Projektu X</h1>
-        <p class="description">Pomozte mi zrealizovat tento projekt. Každý příspěvek nás posouvá blíž k cíli. Vaše podpora je pro mě klíčová.</p>
+        <div class="status-badge"><span class="status-dot"></span>Záchranná mise</div>
+        
+        <h1>Projekt X:<br>Ultimátní „masážní“ hračka</h1>
+        
+        <p class="description">
+            Kámoši, doba je zlá a stres se hromadí. Proto nutně potřebuju zafinancovat tuto <span class="highlight">vysoce specializovanou, ergonomickou masážní pomůcku</span>. 
+            Moje celkové napětí už dosahuje kritických hodnot a vy mě v tom nesmíte nechat! 
+            <br><br>
+            Neptejte se na detaily, nezkoumejte tu fotku s lupou, prostě pošlete prachy a podpořte moje duševní zdraví. Každá stovka mě posouvá blíž.
+        </p>
 
         <div class="progress-block">
             <div class="pb-container"><div class="pb-bar" id="goal-bar"></div></div>
             <div class="pb-stats">
-                <div><span class="pb-stats-large">360 Kč</span><br>vybráno</div>
-                <div style="text-align: right;"><span class="pb-stats-large">1 200 Kč</span><br>cíl (30 %)</div>
+                <div><span class="pb-stats-large">0 Kč</span><br>vybráno</div>
+                <div style="text-align: right;"><span class="pb-stats-large">1 200 Kč</span><br>cíl (0 %)</div>
             </div>
         </div>
 
-        <a href="https://www.paypal.me/TVOJE_JMENO" class="paypal-btn">Podpořit přes PayPal</a>
+        <a href="https://www.paypal.me/TVOJE_JMENO" class="paypal-btn">Poslat na "relaxaci" přes PayPal</a>
     </div>
 </div>
 
 <script>
     window.onload = function() {
         // Tady nastavuješ aktuální procenta (0-100)
-        setTimeout(() => { document.getElementById('goal-bar').style.width = '30%'; }, 500);
+        setTimeout(() => { document.getElementById('goal-bar').style.width = '0%'; }, 500);
     };
 </script>
 
